@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>璟策 · AI 经营参谋与复盘</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="主导航">
+      <div class="brand"><div class="brand-mark" aria-hidden="true"></div><div class="brand-copy"><strong>璟策</strong><small>Jewelry Ops</small></div></div>
+      <div class="nav-label">主动经营</div>
+      <nav class="nav">
+        <a href="index.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 13h6V4H4v9Zm0 7h6v-4H4v4Zm10 0h6v-9h-6v9Zm0-16v4h6V4h-6Z"/></svg>经营驾驶舱</a>
+        <a href="tasks.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M8 6h11M8 12h11M8 18h7M4 6h.01M4 12h.01M4 18h.01" stroke-linecap="round" stroke-width="2"/></svg>周期任务中心<span class="nav-badge">5</span></a>
+        <a class="active" href="ai-review.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 3 9.8 8.8 4 11l5.8 2.2L12 19l2.2-5.8L20 11l-5.8-2.2L12 3Z"/></svg>AI 经营参谋</a>
+      </nav>
+      <div class="nav-label">分析与考核</div>
+      <nav class="nav">
+        <a href="#diagnosis"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="11" cy="11" r="7"/><path d="m16 16 5 5M8 11h6M11 8v6"/></svg>经营诊断</a>
+        <a href="#action"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="m5 12 4 4L19 6"/><path d="M4 4h16v16H4"/></svg>优化方案</a>
+        <a href="#score"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M5 21V10M12 21V3M19 21v-7"/></svg>复盘考核</a>
+      </nav>
+      <div class="sidebar-foot"><div class="store-pill"><span class="store-dot"></span>系统在线<strong>华南区 · 深圳万象店</strong></div></div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <button class="icon-button mobile-menu" aria-label="打开菜单" data-menu><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+        <div class="crumb">主动经营中心 <strong>/ AI 经营参谋</strong></div>
+        <div class="top-actions">
+          <button class="button small">诊断周期：近 30 天⌄</button>
+          <button class="icon-button" aria-label="通知"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9ZM10 21h4"/></svg></button>
+          <div class="avatar">林</div><div class="user-meta"><strong>林店长</strong><span>门店负责人</span></div>
+        </div>
+      </header>
+
+      <div class="content">
+        <section class="page-heading">
+          <div><div class="eyebrow">EXPLAINABLE RETAIL INTELLIGENCE</div><h1>AI 经营参谋</h1><p class="page-subtitle">不只告诉你“哪里不好”，还要解释“为什么”，并把建议转化为可验收动作。</p></div>
+          <div class="heading-actions"><div class="segmented" data-segment><button class="active">本店</button><button>区域</button><button>同级店</button></div><button class="button dark">生成本周复盘</button></div>
+        </section>
+
+        <section class="insight-hero" id="diagnosis">
+          <article class="card diagnosis">
+            <div class="diagnosis-kicker">AI 核心诊断 · 可信度 89%</div>
+            <h2>婚戒转化下滑的关键矛盾，在“新人接待能力 × 主推款缺码”的叠加，而非客流不足。</h2>
+            <p>近 7 天婚戒客流同比稳定（+1.2%），但新人接待占比由 28% 上升至 43%，需求探询完整率仅 61%；同时主推款 12–14 号缺码导致 6 次有效试戴中断。两类因素共同解释本轮转化下降的 76%。</p>
+            <span class="confidence">数据完整度 <b>94%</b> · 样本 186 组接待 · 已排除节假日扰动</span>
+            <div class="diagnosis-actions"><a class="button gold" href="tasks.html">一键转为行动方案</a><button class="button">查看分析口径</button></div>
+          </article>
+          <article class="card">
+            <div class="card-header"><div><h2>诊断证据</h2><p>业绩结果与管理过程交叉验证</p></div><span class="status green">数据已校验</span></div>
+            <div class="card-body evidence-list">
+              <div class="evidence alert"><div class="evidence-top"><strong>新人婚戒转化率</strong><span class="text-ruby">13.2%</span></div><p>低于资深顾问 8.6pp；差异具持续性</p></div>
+              <div class="evidence warn"><div class="evidence-top"><strong>主推款尺码满足率</strong><span class="text-gold">72%</span></div><p>12–14 号缺码，造成 6 次试戴中断</p></div>
+              <div class="evidence good"><div class="evidence-top"><strong>婚戒有效客流</strong><span class="text-jade">+1.2%</span></div><p>客流稳定，排除进店不足为主因</p></div>
+              <div class="evidence warn"><div class="evidence-top"><strong>主题区停留时长</strong><span class="text-gold">-6%</span></div><p>次要影响，灯箱整改后已开始回升</p></div>
+            </div>
+          </article>
+        </section>
+
+        <section class="grid two-one">
+          <article class="card">
+            <div class="card-header"><div><h2>人 · 货 · 场根因链</h2><p>从经营结果反向定位可被管理动作改变的原因</p></div><span class="status blue">解释度 76%</span></div>
+            <div class="card-body">
+              <div class="cause-map">
+                <div class="cause-node"><span>人 · 主要根因</span><strong>新人关键话术未达标</strong><p>需求探询完整率 61%，异议处理评分 68 分，演练完成但未做实战抽检。</p></div>
+                <div class="cause-node"><span>货 · 放大因素</span><strong>主推尺码库存断层</strong><p>缺码未在周一补货节点被识别，跨店调拨比标准时点晚 2 天。</p></div>
+                <div class="cause-node"><span>场 · 次要因素</span><strong>主题区吸引力短时下降</strong><p>灯箱亮度偏低影响停留，但整改后指标已回升，不是本轮首要矛盾。</p></div>
+              </div>
+            </div>
+            <div class="card-foot">AI 只将可通过门店管理动作改变、且有数据证据的因素纳入行动方案。</div>
+          </article>
+
+          <article class="card">
+            <div class="card-header"><div><h2>问题优先级</h2><p>影响程度 × 紧急度 × 可行动性</p></div></div>
+            <div class="card-body score-bars">
+              <div class="bar-row"><span>新人接待能力</span><div class="bar-track"><div class="bar-fill ruby" style="width:94%"></div></div><b>94</b></div>
+              <div class="bar-row"><span>主推款缺码</span><div class="bar-track"><div class="bar-fill gold" style="width:86%"></div></div><b>86</b></div>
+              <div class="bar-row"><span>主题区吸引力</span><div class="bar-track"><div class="bar-fill gold" style="width:58%"></div></div><b>58</b></div>
+              <div class="bar-row"><span>有效客流不足</span><div class="bar-track"><div class="bar-fill" style="width:21%"></div></div><b>21</b></div>
+              <div class="formula" style="margin-top:9px">优先级 = <strong>影响 50%</strong> + 紧急 30% + 可行动 20%</div>
+            </div>
+          </article>
+        </section>
+
+        <section class="grid two-one section-gap" id="action">
+          <article class="card">
+            <div class="card-header"><div><h2>AI 行动方案</h2><p>每条建议都带责任人、期限、验收标准与预期结果</p></div><span class="status gold">预计 7 天见效</span></div>
+            <div class="card-body">
+              <div class="recommendation"><div class="rec-num">01</div><div class="rec-main"><strong>现场辅导：新人婚戒接待</strong><p>责任人：林店长 · 今日 14:20 · 完成 1 次情景演练 + 2 单实战抽检；需求探询清单完成率 ≥ 85% 方可验收。</p></div><div class="rec-result"><strong>+2.8pp</strong><span>预计转化提升</span></div></div>
+              <div class="recommendation"><div class="rec-num">02</div><div class="rec-main"><strong>快速补位：主推尺码跨店调拨</strong><p>责任人：陈主管 · 今日 17:30 · 12–14 号每码补足 ≥ 2 件；同步更新替代款推荐卡。</p></div><div class="rec-result"><strong>-70%</strong><span>试戴中断下降</span></div></div>
+              <div class="recommendation"><div class="rec-num">03</div><div class="rec-main"><strong>机制修正：缺码预警纳入周任务</strong><p>责任人：商品专员 · 每周一 11:00 · 尺码满足率低于 85% 自动创建调拨任务并升级店长。</p></div><div class="rec-result"><strong>≥85%</strong><span>尺码满足目标</span></div></div>
+            </div>
+            <div class="card-foot"><a class="link-arrow" href="tasks.html">已创建 3 个任务草稿，前往确认责任人与排期</a></div>
+          </article>
+
+          <article class="card ai-panel">
+            <div class="card-header"><div><div class="ai-label"><i class="ai-spark"></i>EXPECTED IMPACT</div><h2>方案收益模拟</h2><p>基于同类门店历史干预效果</p></div></div>
+            <div class="card-body">
+              <div class="ai-lead">若 3 项动作按标准完成，未来 7 天婚戒销售额预计增加 ¥38,000–¥56,000。</div>
+              <div class="ai-signal"><span>保守情景</span><strong>转化 +2.2pp · 销售增量约 ¥38,000</strong></div>
+              <div class="ai-signal"><span>目标情景</span><strong>转化 +3.5pp · 销售增量约 ¥49,000</strong></div>
+              <div class="ai-signal"><span>观察窗口</span><strong>7 天；第 3 天检查过程指标，第 7 天验收结果</strong></div>
+              <button class="button small">查看模拟假设</button>
+            </div>
+          </article>
+        </section>
+
+        <section class="grid two-one section-gap" id="score">
+          <article class="card">
+            <div class="card-header"><div><h2>周度量化复盘</h2><p>不以“完成打卡”代替“经营有效”</p></div><span class="status green">评级 A</span></div>
+            <div class="card-body">
+              <div class="metric-bridge">
+                <div class="bridge-step"><span>完整性 · 30%</span><strong>91</strong><em>按期、证据齐全</em></div>
+                <div class="bridge-step"><span>合规性 · 30%</span><strong>86</strong><em>按标准验收</em></div>
+                <div class="bridge-step"><span>有效性 · 30%</span><strong>74</strong><em>改善经营指标</em></div>
+                <div class="bridge-step"><span>持续改进 · 10%</span><strong>82</strong><em>复盘与标准优化</em></div>
+              </div>
+              <div class="formula section-gap">综合分 = 完整性 91 × 30% + 合规性 86 × 30% + 有效性 74 × 30% + 改进 82 × 10% = <strong>83.6</strong></div>
+            </div>
+            <div class="card-foot">量化考核采用过程与结果双指标；短期结果受客流扰动时，保留过程达标分并进入延迟观察。</div>
+          </article>
+
+          <article class="card">
+            <div class="card-header"><div><h2>区域门店排名</h2><p>同等级、同商圈门店可比</p></div><a class="link-arrow" href="#">查看明细</a></div>
+            <div class="card-body rank-list">
+              <div class="rank-row"><div class="rank-num">01</div><div class="rank-store"><strong>广州太古汇店</strong><span>A+ · 目标达成 108%</span></div><div class="rank-score">91.2</div><div class="rank-move">↑ 1</div></div>
+              <div class="rank-row"><div class="rank-num">02</div><div class="rank-store"><strong>深圳万象店</strong><span>A · 目标达成 103%</span></div><div class="rank-score">83.6</div><div class="rank-move">↑ 2</div></div>
+              <div class="rank-row"><div class="rank-num">03</div><div class="rank-store"><strong>珠海环宇城店</strong><span>A · 目标达成 98%</span></div><div class="rank-score">81.8</div><div class="rank-move down">↓ 1</div></div>
+              <div class="rank-row"><div class="rank-num">04</div><div class="rank-store"><strong>东莞国贸店</strong><span>B+ · 目标达成 94%</span></div><div class="rank-score">78.4</div><div class="rank-move">—</div></div>
+            </div>
+          </article>
+        </section>
+
+        <section class="card section-gap">
+          <div class="card-header"><div><h2>从复盘回到标准</h2><p>有效动作沉淀为门店标准，无效动作自动降权，形成持续迭代</p></div><span class="status blue">本周 2 项待沉淀</span></div>
+          <div class="card-body">
+            <div class="loop">
+              <div class="loop-step"><span class="loop-num">01</span><strong>动作完成</strong><small>过程证据入库</small></div>
+              <div class="loop-step"><span class="loop-num">02</span><strong>结果观察</strong><small>7 / 14 / 30 天</small></div>
+              <div class="loop-step active"><span class="loop-num">03</span><strong>有效性判定</strong><small>对照基线与同级店</small></div>
+              <div class="loop-step"><span class="loop-num">04</span><strong>标准沉淀</strong><small>进入任务模板库</small></div>
+              <div class="loop-step"><span class="loop-num">05</span><strong>下周期复用</strong><small>持续校准权重</small></div>
+            </div>
+          </div>
+        </section>
+
+        <div class="demo-note">AI 设计原则：建议可解释、动作可执行、过程可验收、结果可量化；最终由店长确认，不替代经营责任。</div>
+      </div>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

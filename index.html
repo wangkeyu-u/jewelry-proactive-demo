@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>璟策 · 门店主动管理驾驶舱</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="主导航">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true"></div>
+        <div class="brand-copy"><strong>璟策</strong><small>Jewelry Ops</small></div>
+      </div>
+      <div class="nav-label">主动经营</div>
+      <nav class="nav">
+        <a class="active" href="index.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 13h6V4H4v9Zm0 7h6v-4H4v4Zm10 0h6v-9h-6v9Zm0-16v4h6V4h-6Z"/></svg>经营驾驶舱</a>
+        <a href="tasks.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M8 6h11M8 12h11M8 18h7M4 6h.01M4 12h.01M4 18h.01" stroke-linecap="round" stroke-width="2"/></svg>周期任务中心<span class="nav-badge">5</span></a>
+        <a href="ai-review.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 3 9.8 8.8 4 11l5.8 2.2L12 19l2.2-5.8L20 11l-5.8-2.2L12 3Z"/><path d="m5 3 .7 1.8L7.5 5.5l-1.8.7L5 8l-.7-1.8-1.8-.7 1.8-.7L5 3Z"/></svg>AI 经营参谋</a>
+      </nav>
+      <div class="nav-label">三维运营</div>
+      <nav class="nav">
+        <a href="#people"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="8" r="4"/><path d="M4.5 21c.7-4.5 3.2-7 7.5-7s6.8 2.5 7.5 7"/></svg>人效与成长</a>
+        <a href="#goods"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 7.5 12 3l8 4.5v9L12 21l-8-4.5v-9Z"/><path d="m4 7.5 8 4.5 8-4.5M12 12v9"/></svg>货品与风控</a>
+        <a href="#place"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 10h16M6 10v10h12V10M3 10l2-6h14l2 6M9 20v-6h6v6"/></svg>场景与体验</a>
+      </nav>
+      <div class="sidebar-foot"><div class="store-pill"><span class="store-dot"></span>系统在线<strong>华南区 · 深圳万象店</strong></div></div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <button class="icon-button mobile-menu" aria-label="打开菜单" data-menu><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+        <div class="crumb">主动经营中心 <strong>/ 经营驾驶舱</strong></div>
+        <div class="top-actions">
+          <button class="button small"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 4h16v16H4zM8 2v4M16 2v4M4 9h16"/></svg>2026年7月14日</button>
+          <button class="icon-button" aria-label="通知"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9ZM10 21h4"/></svg></button>
+          <div class="avatar">林</div><div class="user-meta"><strong>林店长</strong><span>门店负责人</span></div>
+        </div>
+      </header>
+
+      <div class="content">
+        <section class="page-heading">
+          <div>
+            <div class="eyebrow">STORE CONTROL TOWER</div>
+            <h1>今天，不等问题发生</h1>
+            <p class="page-subtitle">从经营信号中主动生成管理动作，让每项动作有责任人、有证据、有结果。</p>
+          </div>
+          <div class="heading-actions">
+            <div class="segmented" data-segment><button class="active">今日</button><button>本周</button><button>本月</button></div>
+            <button class="button primary"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 3 9.8 8.8 4 11l5.8 2.2L12 19l2.2-5.8L20 11l-5.8-2.2L12 3Z"/></svg>AI 生成今日动作</button>
+          </div>
+        </section>
+
+        <section class="alert-strip">
+          <div class="alert-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 9v4M12 17h.01M10.3 4.5 2.7 18a2 2 0 0 0 1.8 3h15a2 2 0 0 0 1.8-3L13.7 4.5a2 2 0 0 0-3.4 0Z"/></svg></div>
+          <div class="alert-copy"><strong>主动预警：钻石婚戒转化率连续 3 日下降</strong><span>AI 判断主因并非客流，而是新人接待占比上升与主推款缺码共同造成；建议在 14:00 前完成现场辅导与跨店调货确认。</span></div>
+          <a class="button small" href="ai-review.html">查看诊断</a>
+        </section>
+
+        <section class="grid kpis">
+          <article class="card kpi-card">
+            <div class="kpi-label"><span>门店经营健康度</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M3 12h4l2-6 4 12 2-6h6"/></svg></div>
+            <div class="kpi-value"><strong>83.6</strong><span>/ 100</span></div>
+            <div class="trend">↑ 4.2 较上周 · 评级 A</div>
+            <svg class="micro-line" viewBox="0 0 72 22" fill="none"><path d="M1 18 11 15l10 2 10-8 10 3 10-7 10 2 10-5" stroke="#145b4a" stroke-width="1.5"/><path d="M1 21V18l10-3 10 2 10-8 10 3 10-7 10 2 10-5v19H1Z" fill="#dfece7" opacity=".65"/></svg>
+          </article>
+          <article class="card kpi-card">
+            <div class="kpi-label"><span>周期动作执行率</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="m5 12 4 4L19 6"/></svg></div>
+            <div class="kpi-value"><strong>91%</strong><span>20 / 22 项</span></div>
+            <div class="trend">↑ 7% 较上周 · 2项待验收</div>
+          </article>
+          <article class="card kpi-card">
+            <div class="kpi-label"><span>销售目标达成</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 19V9M10 19V5M16 19v-7M22 19H2"/></svg></div>
+            <div class="kpi-value"><strong>76.4%</strong><span>¥382,120</span></div>
+            <div class="trend neutral">日进度应达 73% · 领先 3.4%</div>
+          </article>
+          <article class="card kpi-card">
+            <div class="kpi-label"><span>高风险待处理</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20ZM12 7v6M12 17h.01"/></svg></div>
+            <div class="kpi-value"><strong class="text-ruby">3</strong><span>人 1 · 货 2</span></div>
+            <div class="trend down">最早截止 14:00 · 已超时 1项</div>
+          </article>
+        </section>
+
+        <section class="grid two-one">
+          <article class="card">
+            <div class="card-header"><div><h2>主动管理闭环</h2><p>系统不是记录“做过什么”，而是驱动“下一步该做什么”</p></div><a class="link-arrow" href="tasks.html">进入任务中心</a></div>
+            <div class="card-body">
+              <div class="loop">
+                <div class="loop-step"><span class="loop-num">01</span><strong>捕捉信号</strong><small>业绩 / 执行 / 风险</small></div>
+                <div class="loop-step"><span class="loop-num">02</span><strong>AI 诊断</strong><small>归因 / 优先级</small></div>
+                <div class="loop-step active"><span class="loop-num">03</span><strong>生成动作</strong><small>责任人 / 截止时间</small></div>
+                <div class="loop-step"><span class="loop-num">04</span><strong>执行验收</strong><small>图片 / 数据 / 复核</small></div>
+                <div class="loop-step"><span class="loop-num">05</span><strong>量化复盘</strong><small>绩效 / 标准迭代</small></div>
+              </div>
+            </div>
+            <div class="card-foot">今日已由系统主动触发 7 个动作，其中 4 个来自经营异常、3 个来自日常标准。</div>
+          </article>
+
+          <article class="card ai-panel">
+            <div class="card-header"><div><div class="ai-label"><i class="ai-spark"></i>AI MORNING BRIEF</div><h2>今日经营参谋</h2><p>结合近 30 天门店数据生成</p></div></div>
+            <div class="card-body">
+              <div class="ai-lead">今日先抓“婚戒转化”，再做“黄金养护”，晚班重点保障七夕主题陈列。</div>
+              <div class="ai-signal"><span>优先动作</span><strong>14:00 前完成新人接待演练，店长抽检 2 单</strong></div>
+              <div class="ai-signal"><span>预计收益</span><strong>婚戒转化率预计提升 2.8–4.1 个百分点</strong></div>
+              <div class="ai-signal"><span>风险提示</span><strong>2 件高货值商品养护记录将在今日到期</strong></div>
+              <a class="button small" href="ai-review.html">展开 AI 诊断</a>
+            </div>
+          </article>
+        </section>
+
+        <section class="grid two-one section-gap">
+          <article class="card">
+            <div class="card-header"><div><h2>人 · 货 · 场经营体征</h2><p>用管理动作解释经营结果，而非孤立查看指标</p></div><span class="status gold">2 项需干预</span></div>
+            <div class="card-body dimension-list">
+              <div class="dimension-item" id="people">
+                <div class="dimension-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="8" r="4"/><path d="M5 21c.6-4.4 3-7 7-7s6.4 2.6 7 7"/></svg></div>
+                <div class="dimension-main"><strong>人 · 服务与能力 <i class="risk-dot high"></i></strong><p>新人婚戒接待转化 13.2%，低于资深员工 8.6pp；2 人待现场辅导</p></div>
+                <div class="dimension-score"><strong class="text-ruby">74</strong><span>执行 86% · 转化偏低</span></div>
+              </div>
+              <div class="dimension-item" id="goods">
+                <div class="dimension-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="m4 8 8-5 8 5-8 5-8-5Z"/><path d="m4 8 8 5 8-5v8l-8 5-8-5V8Z"/></svg></div>
+                <div class="dimension-main"><strong>货 · 动销与风控 <i class="risk-dot mid"></i></strong><p>主推婚戒 12–14 号缺码；高货值养护 2 件临期；滞销款调拨建议 4 件</p></div>
+                <div class="dimension-score"><strong class="text-gold">81</strong><span>周转 1.7 · 风险可控</span></div>
+              </div>
+              <div class="dimension-item" id="place">
+                <div class="dimension-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 10h16M6 10v10h12V10M3 10l2-6h14l2 6"/><path d="M9 20v-6h6v6"/></svg></div>
+                <div class="dimension-main"><strong>场 · 陈列与体验 <i class="risk-dot low"></i></strong><p>晨检通过率 96%；七夕主题区灯箱亮度偏差已于 10:18 完成整改</p></div>
+                <div class="dimension-score"><strong class="text-jade">92</strong><span>形象统一 · 体验良好</span></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-header"><div><h2>今日周期动作</h2><p>日任务 8 项 · 完成 5 项</p></div><div class="segmented" data-segment><button class="active">日</button><button>周</button><button>月</button></div></div>
+            <div class="card-body">
+              <div class="agenda">
+                <div class="agenda-row"><div class="agenda-time">09:30</div><div class="agenda-task"><strong>开店五维晨检</strong><span>环境 / 陈列 / 设备 / 安防 / 人员</span></div><span class="status green">已验收</span></div>
+                <div class="agenda-row"><div class="agenda-time">11:00</div><div class="agenda-task"><strong>高货值商品盘点</strong><span>黄金柜组 · 72 件</span></div><span class="status green">已完成</span></div>
+                <div class="agenda-row"><div class="agenda-time">14:00</div><div class="agenda-task"><strong>婚戒接待辅导</strong><span>AI 异常触发 · 店长验收</span></div><span class="status red">即将超时</span></div>
+                <div class="agenda-row"><div class="agenda-time">17:30</div><div class="agenda-task"><strong>主推款补货确认</strong><span>12–14 号 · 区域仓调拨</span></div><span class="status gold">进行中</span></div>
+                <div class="agenda-row"><div class="agenda-time">21:30</div><div class="agenda-task"><strong>闭店账货复核</strong><span>双人交叉复核</span></div><span class="status gray">未开始</span></div>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <section class="grid one-two section-gap">
+          <article class="card">
+            <div class="card-header"><div><h2>量化考核</h2><p>动作质量与经营结果共同计分</p></div><a class="link-arrow" href="ai-review.html">查看复盘</a></div>
+            <div class="card-body score-summary">
+              <div class="score-ring"><div><strong>83.6</strong><span>本周综合分</span></div></div>
+              <div class="score-bars">
+                <div class="bar-row"><span>执行完整性</span><div class="bar-track"><div class="bar-fill" style="width:91%"></div></div><b>91</b></div>
+                <div class="bar-row"><span>标准合规性</span><div class="bar-track"><div class="bar-fill gold" style="width:86%"></div></div><b>86</b></div>
+                <div class="bar-row"><span>经营有效性</span><div class="bar-track"><div class="bar-fill ruby" style="width:74%"></div></div><b>74</b></div>
+              </div>
+            </div>
+            <div class="card-foot">考核结果关联门店评级 60% 与店长绩效 40%</div>
+          </article>
+          <article class="card">
+            <div class="card-header"><div><h2>管理动作 → 经营结果</h2><p>用数据证明“做了”是否真正“有效”</p></div><span class="status blue">近 4 周</span></div>
+            <div class="card-body">
+              <div class="metric-bridge">
+                <div class="bridge-step"><span>动作输入</span><strong>12 次</strong><em>婚戒接待演练</em></div>
+                <div class="bridge-step"><span>行为改变</span><strong>+18%</strong><em>需求探询完整率</em></div>
+                <div class="bridge-step"><span>过程指标</span><strong>+3.6pp</strong><em>试戴转化率</em></div>
+                <div class="bridge-step"><span>经营结果</span><strong>+¥62k</strong><em>婚戒销售增量</em></div>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <div class="demo-note">静态演示数据 · 业务链路：异常信号 → AI 归因 → 周期动作 → 证据验收 → 量化考核 → 标准迭代</div>
+      </div>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

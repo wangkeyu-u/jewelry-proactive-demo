@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>璟策 · 周期任务中心</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="主导航">
+      <div class="brand"><div class="brand-mark" aria-hidden="true"></div><div class="brand-copy"><strong>璟策</strong><small>Jewelry Ops</small></div></div>
+      <div class="nav-label">主动经营</div>
+      <nav class="nav">
+        <a href="index.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 13h6V4H4v9Zm0 7h6v-4H4v4Zm10 0h6v-9h-6v9Zm0-16v4h6V4h-6Z"/></svg>经营驾驶舱</a>
+        <a class="active" href="tasks.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M8 6h11M8 12h11M8 18h7M4 6h.01M4 12h.01M4 18h.01" stroke-linecap="round" stroke-width="2"/></svg>周期任务中心<span class="nav-badge">5</span></a>
+        <a href="ai-review.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 3 9.8 8.8 4 11l5.8 2.2L12 19l2.2-5.8L20 11l-5.8-2.2L12 3Z"/></svg>AI 经营参谋</a>
+      </nav>
+      <div class="nav-label">任务资产</div>
+      <nav class="nav">
+        <a href="#board"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="3" y="4" width="18" height="16" rx="1"/><path d="M9 4v16M15 4v16"/></svg>执行看板</a>
+        <a href="#ledger"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M5 3h14v18H5zM8 8h8M8 12h8M8 16h5"/></svg>验收台账</a>
+        <a href="#"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 4h16v16H4zM8 8h8M8 12h8M8 16h5"/></svg>标准任务库</a>
+      </nav>
+      <div class="sidebar-foot"><div class="store-pill"><span class="store-dot"></span>系统在线<strong>华南区 · 深圳万象店</strong></div></div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <button class="icon-button mobile-menu" aria-label="打开菜单" data-menu><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+        <div class="crumb">主动经营中心 <strong>/ 周期任务中心</strong></div>
+        <div class="top-actions">
+          <button class="button small">深圳万象店⌄</button>
+          <button class="icon-button" aria-label="通知"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9ZM10 21h4"/></svg></button>
+          <div class="avatar">林</div><div class="user-meta"><strong>林店长</strong><span>门店负责人</span></div>
+        </div>
+      </header>
+
+      <div class="content">
+        <section class="page-heading">
+          <div><div class="eyebrow">PERIODIC ACTION CENTER</div><h1>周期任务中心</h1><p class="page-subtitle">标准动作按日 / 周 / 月自动编排，异常任务由经营信号实时触发。</p></div>
+          <div class="heading-actions"><button class="button">导出执行台账</button><button class="button primary">＋ 新建临时任务</button></div>
+        </section>
+
+        <section class="filter-bar">
+          <div class="segmented" data-segment><button class="active">今日</button><button>本周</button><button>本月</button></div>
+          <label class="field"><select aria-label="业务维度"><option>全部维度</option><option>人 · 人效</option><option>货 · 货品</option><option>场 · 场景</option></select></label>
+          <label class="field"><select aria-label="责任人"><option>全部责任人</option><option>林店长</option><option>王顾问</option><option>陈主管</option></select></label>
+          <label class="field"><select aria-label="任务来源"><option>全部来源</option><option>周期标准</option><option>AI 异常触发</option><option>总部专项</option></select></label>
+          <span class="filter-push">共 22 项 · 待处理 5 项 · 超时 1 项</span>
+        </section>
+
+        <section class="card cycle-hero">
+          <div class="cycle-copy">
+            <div class="eyebrow">TODAY'S RHYTHM · 07 / 14</div>
+            <h2>从开店到闭店，管理动作不遗漏</h2>
+            <p>早班完成场景与库存底线检查；营业中根据实时经营信号插入辅导、补货动作；闭店后完成账货与客户跟进复盘。</p>
+            <div class="cycle-progress" aria-label="今日时间进度"><span class="done"></span><span class="done"></span><span class="done"></span><span class="now"></span><span></span><span></span><span></span></div>
+          </div>
+          <div class="cycle-stat">
+            <div><strong>22</strong><span>今日应执行动作</span></div><div><strong class="text-jade">17</strong><span>已完成 / 待验收</span></div>
+            <div><strong class="text-ruby">1</strong><span>超时未完成</span></div><div><strong class="text-gold">3</strong><span>AI 动态插入</span></div>
+          </div>
+        </section>
+
+        <section class="task-board" id="board">
+          <div class="task-column">
+            <div class="column-head"><strong>待开始</strong><span>5</span></div>
+            <article class="task-card high">
+              <div class="task-top"><span>AI 异常触发 · 人</span><span>14:00 截止</span></div>
+              <h3>婚戒新人接待现场辅导</h3>
+              <p>完成“需求探询—试戴引导—异议处理”演练，店长抽检 2 单。</p>
+              <div class="task-meta"><div class="owner"><b>林</b>林店长</div><span class="status red">高优先级</span></div>
+            </article>
+            <article class="task-card">
+              <div class="task-top"><span>日常标准 · 货</span><span>17:30 截止</span></div>
+              <h3>高货值商品养护</h3>
+              <p>完成 2 件临期钻饰清洁与镶口检查，上传前后对比照片。</p>
+              <div class="task-meta"><div class="owner"><b>王</b>王顾问</div><span>10 分</span></div>
+            </article>
+            <article class="task-card">
+              <div class="task-top"><span>周任务 · 场</span><span>19:00 截止</span></div>
+              <h3>七夕主题氛围复核</h3>
+              <p>按总部 6 项陈列标准完成主题区巡检。</p>
+              <div class="task-meta"><div class="owner"><b>陈</b>陈主管</div><span>8 分</span></div>
+            </article>
+          </div>
+
+          <div class="task-column">
+            <div class="column-head"><strong>执行中</strong><span>3</span></div>
+            <article class="task-card high">
+              <div class="task-top"><span>AI 异常触发 · 货</span><span>剩余 02:16</span></div>
+              <h3>主推婚戒缺码调拨确认</h3>
+              <p>12–14 号缺码已发起区域调拨，待确认到货时间并同步销售顾问。</p>
+              <div class="task-meta"><div class="owner"><b>陈</b>陈主管</div><span class="status gold">进行中</span></div>
+            </article>
+            <article class="task-card">
+              <div class="task-top"><span>日常标准 · 人</span><span>剩余 03:40</span></div>
+              <h3>重点客户到店前准备</h3>
+              <p>核对客户偏好、历史试戴与预算，预选 6 件候选商品。</p>
+              <div class="task-meta"><div class="owner"><b>王</b>王顾问</div><span>证据 1 / 3</span></div>
+            </article>
+          </div>
+
+          <div class="task-column">
+            <div class="column-head"><strong>待验收</strong><span>2</span></div>
+            <article class="task-card">
+              <div class="task-top"><span>日常标准 · 货</span><span>11:06 提交</span></div>
+              <h3>黄金柜组双人盘点</h3>
+              <p>账面 72 件 / 实盘 72 件，克重与标签一致，已双人签名。</p>
+              <div class="task-meta"><div class="proof"><i>图2</i><i>签2</i></div><span class="status blue">待店长验收</span></div>
+            </article>
+            <article class="task-card">
+              <div class="task-top"><span>AI 异常触发 · 场</span><span>10:18 提交</span></div>
+              <h3>七夕灯箱亮度整改</h3>
+              <p>亮度由 420 lux 调至标准 580 lux，现场复测通过。</p>
+              <div class="task-meta"><div class="proof"><i>图3</i><i>数1</i></div><span class="status blue">待复核</span></div>
+            </article>
+          </div>
+
+          <div class="task-column">
+            <div class="column-head"><strong>已闭环</strong><span>12</span></div>
+            <article class="task-card done">
+              <div class="task-top"><span>日常标准 · 场</span><span>09:24 完成</span></div>
+              <h3>开店五维晨检</h3>
+              <p>环境、陈列、设备、安防、人员仪容 28 项检查全部通过。</p>
+              <div class="task-meta"><div class="owner"><b>陈</b>陈主管</div><span class="status green">9.6 分</span></div>
+            </article>
+            <article class="task-card done">
+              <div class="task-top"><span>日常标准 · 人</span><span>10:00 完成</span></div>
+              <h3>早班目标分解</h3>
+              <p>个人目标、主推品类与重点客户已确认到人。</p>
+              <div class="task-meta"><div class="owner"><b>林</b>林店长</div><span class="status green">10 分</span></div>
+            </article>
+            <article class="task-card done">
+              <div class="task-top"><span>日常标准 · 货</span><span>10:32 完成</span></div>
+              <h3>新品主推位检查</h3>
+              <p>新品标签、灯光、搭配与库存深度均符合标准。</p>
+              <div class="task-meta"><div class="owner"><b>王</b>王顾问</div><span class="status green">9.2 分</span></div>
+            </article>
+          </div>
+        </section>
+
+        <section class="grid two-one section-gap">
+          <article class="card" id="ledger">
+            <div class="card-header"><div><h2>执行与验收台账</h2><p>每个动作同时记录标准、过程证据、验收人与结果分</p></div><a class="link-arrow" href="#">全部记录</a></div>
+            <div class="card-body table-scroll" style="padding:18px 0 4px">
+              <table class="task-table">
+                <thead><tr><th>任务</th><th>周期 / 来源</th><th>责任人</th><th>过程证据</th><th>验收结果</th><th>考核分</th></tr></thead>
+                <tbody>
+                  <tr><td class="task-name"><strong>开店五维晨检</strong><span>标准检查项 28 / 28</span></td><td>每日 · 标准</td><td>陈主管</td><td><div class="proof"><i>图5</i><i>表1</i></div></td><td><span class="status green">通过</span></td><td class="score-cell">9.6</td></tr>
+                  <tr><td class="task-name"><strong>黄金柜组双人盘点</strong><span>账实差异 0 件</span></td><td>每日 · 风控</td><td>王 / 刘</td><td><div class="proof"><i>图2</i><i>签2</i></div></td><td><span class="status blue">待验收</span></td><td class="score-cell">—</td></tr>
+                  <tr><td class="task-name"><strong>七夕灯箱亮度整改</strong><span>420 → 580 lux</span></td><td>异常 · AI</td><td>陈主管</td><td><div class="proof"><i>图3</i><i>数1</i></div></td><td><span class="status green">通过</span></td><td class="score-cell">8.8</td></tr>
+                  <tr><td class="task-name"><strong>会员沉睡唤醒</strong><span>目标客户 20 / 触达 18</span></td><td>每周 · 增长</td><td>销售组</td><td><div class="proof"><i>录8</i><i>表1</i></div></td><td><span class="status gold">部分完成</span></td><td class="score-cell text-gold">7.4</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+
+          <article class="card ai-panel">
+            <div class="card-header"><div><div class="ai-label"><i class="ai-spark"></i>SMART SCHEDULER</div><h2>AI 动态排程</h2><p>标准周期 + 异常插单 + 人岗匹配</p></div></div>
+            <div class="card-body">
+              <div class="ai-lead">检测到 14:00–16:00 客流低谷，已建议将辅导任务安排在 14:20，不影响高峰接待。</div>
+              <div class="ai-signal"><span>排程依据</span><strong>小时客流 × 员工班次 × 任务时长 × 优先级</strong></div>
+              <div class="ai-signal"><span>冲突检测</span><strong>王顾问 17:00 有重点客户预约，养护任务建议转派刘顾问</strong></div>
+              <div class="ai-signal"><span>闭环规则</span><strong>超时 30 分钟自动提醒责任人，超时 2 小时升级店长</strong></div>
+              <button class="button small">应用排程建议</button>
+            </div>
+          </article>
+        </section>
+
+        <div class="demo-note">任务设计原则：固定标准动作保证“不遗漏”，经营异常动作解决“真问题”，证据与验收规则防止“走形式”。</div>
+      </div>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
